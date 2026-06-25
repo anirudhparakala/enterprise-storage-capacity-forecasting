@@ -61,6 +61,8 @@ Every simulated inventory row must include `inventory_type = Simulated`.
 
 ## Capacity Simulation Assumptions
 
+Starting used capacity is simulated using a deterministic tiered utilization distribution to create realistic portfolio capacity-planning scenarios. Real workload metrics are not modified.
+
 - Cluster assignment uses deterministic seed `42`.
 - Capacity inventory generation uses deterministic seed `42`.
 - Starting utilization generation uses deterministic seed `42`.
